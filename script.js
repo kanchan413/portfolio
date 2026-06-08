@@ -138,16 +138,34 @@ window.addEventListener('scroll', () => {
 });
 
 // ===== CONTACT FORM =====
-document.getElementById('contactForm').addEventListener('submit', (e) => {
+document.getElementById('contactForm').addEventListener('submit', async (e) => {
   e.preventDefault();
-  const btn = e.target.querySelector('button[type="submit"]');
-  btn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
-  btn.style.background = '#00cc6a';
-  setTimeout(() => {
-    btn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
-    btn.style.background = '';
-    e.target.reset();
-  }, 3000);
+  const form = e.target;
+  const btn = form.querySelector('button[type="submit"]');
+  btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+  btn.disabled = true;
+
+  const data = new FormData(form);
+  const response = await fetch(form.action, {
+    method: 'POST',
+    body: data,
+    headers: { 'Accept': 'application/json' }
+  });
+
+  if (response.ok) {
+    btn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
+    btn.style.background = '#00cc6a';
+    form.reset();
+    setTimeout(() => {
+      btn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+      btn.style.background = '';
+      btn.disabled = false;
+    }, 3000);
+  } else {
+    btn.innerHTML = '<i class="fas fa-times"></i> Failed. Try Again.';
+    btn.style.background = '#ff4444';
+    btn.disabled = false;
+  }
 });
 
 // ===== CURSOR GLOW =====
