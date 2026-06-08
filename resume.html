@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume — Kanchan Kumari</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    .resume-page {
+      padding: 8rem 0 5rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .resume-title {
+      text-align: center;
+      font-family: sans-serif;
+      font-size: 3.5rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 2rem;
+    }
+
+    .resume-pdf-btn {
+      display: block;
+      width: fit-content;
+      margin: 0 auto 3.5rem;
+      background: #7c3aed;
+      color: #fff;
+      text-align: center;
+      padding: 1.2rem 2.5rem;
+      border-radius: 10px;
+      font-family: var(--font-head);
+      font-size: 0.9rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      line-height: 1.5;
+      text-decoration: none;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .resume-pdf-btn:hover {
+      background: #6d28d9;
+      transform: translateY(-2px);
+    }
+
+    .resume-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+
+    .resume-card {
+      background: #1a1a2e;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 2rem;
+    }
+
+    .resume-card h3 {
+      font-family: var(--font-head);
+      font-size: 0.85rem;
+      letter-spacing: 2px;
+      color: var(--accent);
+      margin-bottom: 1.2rem;
+      text-transform: uppercase;
+    }
+
+    .resume-card p {
+      color: var(--text-dim);
+      line-height: 1.8;
+      font-size: 0.97rem;
+      margin-bottom: 1rem;
+    }
+
+    .resume-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .resume-card a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .resume-card a:hover {
+      text-decoration: underline;
+    }
+
+    .resume-entry {
+      margin-bottom: 1.5rem;
+    }
+
+    .resume-entry:last-child {
+      margin-bottom: 0;
+    }
+
+    .resume-entry-title {
+      font-weight: 700;
+      color: var(--text);
+      font-size: 1rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .resume-entry-sub {
+      color: var(--accent);
+      font-size: 0.88rem;
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+    }
+
+    .resume-entry-date {
+      color: var(--text-dim);
+      font-size: 0.82rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .resume-entry-desc {
+      color: var(--text-dim);
+      font-size: 0.93rem;
+      line-height: 1.7;
+    }
+
+    .resume-skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .resume-skill {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 0.3rem 0.8rem;
+      border-radius: 4px;
+      font-size: 0.82rem;
+    }
+
+    @media (max-width: 768px) {
+      .resume-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .resume-title {
+        font-size: 2.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="particles" id="particles"></div>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-bracket">&lt;</span>
+      <span class="logo-text">Kanchan</span>
+      <span class="logo-bracket">/&gt;</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="resume.html" style="color:var(--accent)">Resume</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <section class="resume-page">
+    <div class="container">
+
+      <h1 class="resume-title">Resume</h1>
+
+      <a href="resume.pdf" target="_blank" download="Kanchan_Kumari_Resume.pdf" class="resume-pdf-btn">
+        <i class="fas fa-file-pdf" style="margin-right:0.5rem;"></i> DOWNLOAD RESUME PDF
+      </a>
+
+      <div class="resume-grid">
+
+        <!-- PROFILE -->
+        <div class="resume-card">
+          <h3>Profile</h3>
+          <p>
+            My name is Kanchan Kumari, a Unity Game Developer based in India.
+            I've worked on several Unity projects including 2D and 3D mobile games
+            published on Google Play Store &amp; App Store.
+          </p>
+          <p>
+            I'm currently looking for professional opportunities in the game
+            development industry. I specialize in Unity & C# with knowledge of
+            game architecture, design patterns, and mobile game development.
+          </p>
+        </div>
+
+        <!-- CONTACT -->
+        <div class="resume-card">
+          <h3>Contact</h3>
+          <p>E-mail for contact: <a href="mailto:kanchan10kumari.kk@gmail.com">kanchan10kumari.kk@gmail.com</a></p>
+          <p>Location: India</p>
+          <p>
+            GitHub: <a href="#" target="_blank">github.com/yourusername</a><br />
+            LinkedIn: <a href="https://www.linkedin.com/in/kanchan-kumari-9a4548170" target="_blank">linkedin.com/in/kanchan-kumari-9a4548170</a>
+          </p>
+        </div>
+
+        <!-- WORK EXPERIENCE -->
+        <div class="resume-card">
+          <h3>Work Experience</h3>
+
+          <div class="resume-entry">
+            <div class="resume-entry-title">Unity Game Developer</div>
+            <div class="resume-entry-sub">Outthinking Private Limited</div>
+            <div class="resume-entry-date">2021 – Present</div>
+            <div class="resume-entry-desc">
+              Developed and published mobile games on Google Play Store &amp; App Store using Unity & C#.
+              Worked on gameplay mechanics, UI systems, and performance optimization.
+            </div>
+          </div>
+
+        </div>
+
+        <!-- EDUCATION -->
+        <div class="resume-card">
+          <h3>Education</h3>
+
+          <div class="resume-entry">
+            <div class="resume-entry-title">Bachelor of Engineering (BE)</div>
+            <div class="resume-entry-sub">CMR Institute of Technology</div>
+            <div class="resume-entry-date">2016 – 2019</div>
+            <div class="resume-entry-desc">Computer Science</div>
+          </div>
+
+          <div class="resume-entry">
+            <div class="resume-entry-title">Diploma</div>
+            <div class="resume-entry-sub">BSF Institute of Technology</div>
+            <div class="resume-entry-date">2013 – 2016</div>
+            <div class="resume-entry-desc">Computer Science</div>
+          </div>
+
+          <div class="resume-entry">
+            <div class="resume-entry-title">10th Standard</div>
+            <div class="resume-entry-sub">State Board (Bihar)</div>
+            <div class="resume-entry-date">2013</div>
+          </div>
+        </div>
+
+        <!-- SKILLS -->
+        <div class="resume-card">
+          <h3>Technical Skills</h3>
+          <div class="resume-skills-list">
+            <span class="resume-skill">Unity 3D / 2D</span>
+            <span class="resume-skill">C#</span>
+            <span class="resume-skill">Unreal Engine</span>
+            <span class="resume-skill">C++</span>
+            <span class="resume-skill">Game AI</span>
+            <span class="resume-skill">Shader / HLSL</span>
+            <span class="resume-skill">Multiplayer / Netcode</span>
+            <span class="resume-skill">Git / GitHub</span>
+            <span class="resume-skill">Android / iOS</span>
+            <span class="resume-skill">Google Play Store &amp; App Store</span>
+            <span class="resume-skill">Physics Systems</span>
+            <span class="resume-skill">UI/UX Design</span>
+          </div>
+        </div>
+
+        <!-- PUBLISHED GAMES -->
+        <div class="resume-card">
+          <h3>Published Games</h3>
+
+          <div class="resume-entry">
+            <div class="resume-entry-title">Word Puzzle: Connect & Spell</div>
+            <div class="resume-entry-sub">Word Game — Google Play Store &amp; App Store</div>
+            <div class="resume-entry-desc">Brain-training word puzzle with hundreds of levels and daily challenges.
+            </div>
+          </div>
+
+          <div class="resume-entry">
+            <div class="resume-entry-title">Carrom Strike – Disc Pool Game</div>
+            <div class="resume-entry-sub">Board Game — Google Play Store &amp; App Store</div>
+            <div class="resume-entry-desc">3D multiplayer carrom board game with online and offline modes.</div>
+          </div>
+
+          <div class="resume-entry">
+            <div class="resume-entry-title">Bottle Shoot, Word Scramble, Watermelon Shooting, Parachute Jump</div>
+            <div class="resume-entry-sub">Mobile Games — Google Play Store &amp; App Store</div>
+            <div class="resume-entry-desc">Various casual mobile games published on Google Play Store &amp; App Store.
+            </div>
+          </div>
+        </div>
+
+        <!-- AI APP -->
+        <div class="resume-card">
+          <h3>AI Application</h3>
+
+          <div class="resume-entry">
+            <div class="resume-entry-title">Study Buddy</div>
+            <div class="resume-entry-sub">AI App — Android &amp; iOS</div>
+            <div class="resume-entry-date">Role: Backend Developer</div>
+            <div class="resume-entry-desc">
+              An AI-powered study assistant that helps students prepare for exams,
+              specially designed for NCERT students. Provides smart question practice,
+              exam preparation tools, and personalized learning support.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

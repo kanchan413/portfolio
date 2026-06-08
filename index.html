@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kanchan Kumari — Game Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+
+  <div class="particles" id="particles"></div>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-bracket">&lt;</span>
+      <span class="logo-text">Kanchan</span>
+      <span class="logo-bracket">/&gt;</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="resume.html">Resume</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-content fade-up">
+      <div class="hero-tag">// GAME DEVELOPER</div>
+      <h1 class="hero-title">
+        Hi, I'm <span class="highlight" id="typed-name"></span>
+      </h1>
+      <p class="hero-subtitle">
+        I craft <span class="accent">immersive game experiences</span> using
+        Unity, Unreal Engine &amp; C#.<br />
+        From concept to playable — I build worlds players love.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary"><i class="fas fa-gamepad"></i> View My Games</a>
+        <a href="#contact" class="btn btn-outline"><i class="fas fa-envelope"></i> Hire Me</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number" data-target="10">0</span>+
+          <span class="stat-label">Games Worked On</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-target="5">0</span>+
+          <span class="stat-label">Years Experience</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual fade-up">
+      <div class="game-window">
+        <div class="window-bar">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="window-title">GameEngine.exe</span>
+        </div>
+        <div class="code-block">
+          <pre id="code-animation"></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-header fade-up">
+        <h2>Who Am I?</h2>
+      </div>
+      <div class="about-content fade-up">
+        <div class="about-avatar">
+          <div class="avatar-frame">
+            <div class="avatar-icon"><i class="fas fa-user-astronaut"></i></div>
+            <div class="avatar-ring"></div>
+            <div class="avatar-ring ring2"></div>
+          </div>
+        </div>
+        <div class="about-text">
+          <p>I'm a passionate <span class="accent">Game Developer</span> with expertise in building engaging gameplay
+            experiences across PC and Mobile.</p>
+          <p>I specialize in <span class="accent">Unity &amp; C#</span> with deep knowledge of game architecture, design
+            patterns, physics systems, AI behaviors, and rendering pipelines.</p>
+          <p>When I'm not building games, I'm contributing to open-source projects and leveling up my shader skills.</p>
+          <div class="about-tags">
+            <span class="tag">Unity 3D / 2D</span>
+            <span class="tag">Unreal Engine</span>
+            <span class="tag">C# / C++</span>
+
+            <span class="tag">Game AI</span>
+            <span class="tag">Shader Dev</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <div class="section-header fade-up">
+        <h2>My Tech Stack</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card fade-up">
+          <div class="skill-icon"><i class="fas fa-cube"></i></div>
+          <h3>Unity Engine</h3>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="90"></div>
+          </div>
+          <span class="skill-percent">90%</span>
+        </div>
+        <div class="skill-card fade-up">
+          <div class="skill-icon"><i class="fas fa-dragon"></i></div>
+          <h3>Unreal Engine</h3>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="70"></div>
+          </div>
+          <span class="skill-percent">70%</span>
+        </div>
+        <div class="skill-card fade-up">
+          <div class="skill-icon"><i class="fas fa-code"></i></div>
+          <h3>C# Programming</h3>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="85"></div>
+          </div>
+          <span class="skill-percent">85%</span>
+        </div>
+        <div class="skill-card fade-up">
+          <div class="skill-icon"><i class="fas fa-robot"></i></div>
+          <h3>Game AI</h3>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="80"></div>
+          </div>
+          <span class="skill-percent">80%</span>
+        </div>
+        <div class="skill-card fade-up">
+          <div class="skill-icon"><i class="fas fa-paint-brush"></i></div>
+          <h3>Shader / HLSL</h3>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="65"></div>
+          </div>
+          <span class="skill-percent">65%</span>
+        </div>
+        <div class="skill-card fade-up">
+          <div class="skill-icon"><i class="fas fa-network-wired"></i></div>
+          <h3>Multiplayer / Netcode</h3>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="60"></div>
+          </div>
+          <span class="skill-percent">60%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="section-header fade-up">
+        <h2>My Games</h2>
+      </div>
+      <div class="filter-buttons fade-up">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="word">Word</button>
+        <button class="filter-btn" data-filter="shooting">Shooting</button>
+        <button class="filter-btn" data-filter="board">Board</button>
+        <button class="filter-btn" data-filter="casual">Casual</button>
+        <button class="filter-btn" data-filter="ai">AI</button>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card fade-up" data-category="word">
+          <div class="project-thumbnail">
+            <img src="https://play-lh.googleusercontent.com/PxddD0Ca_SyykMFP9Wd-GdWnNqlj2plw9WPaZuOdrdn6auyx4_8EtCAJce7oUSwM_4I=w480-h960" alt="Word Puzzle: Connect & Spell" class="project-img-cover" />
+            <div class="project-overlay">
+              <a href="https://play.google.com/store/apps/details?id=com.wordpick.wordgame" target="_blank"
+                class="project-link"><i class="fab fa-google-play"></i> Play Store</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span class="ptag mobile">Mobile</span><span class="ptag">Word</span><span
+                class="ptag">Puzzle</span></div>
+            <h3>Word Puzzle: Connect &amp; Spell</h3>
+            <p>Brain-training word puzzle game where players swipe and connect letters to form hidden words across
+              hundreds of levels.</p>
+            <div class="project-features">
+              <span><i class="fas fa-check"></i> Hundreds of Levels</span>
+              <span><i class="fas fa-check"></i> Daily Challenges</span>
+              <span><i class="fas fa-check"></i> Offline Play</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card fade-up" data-category="shooting">
+          <div class="project-thumbnail">
+            <img src="https://play-lh.googleusercontent.com/iHAlro5SUa1ajgVSTaIR_AuKA4Nvg-z3YhjvSIvVuGnhI7w0cIp1QUHR-ijmsyHJAw=w480-h960" alt="Bottle Shoot" class="project-img-cover" />
+            <div class="project-overlay">
+              <a href="https://play.google.com/store/apps/details?id=com.newshootinggames.bottleshooting"
+                target="_blank" class="project-link"><i class="fab fa-google-play"></i> Play Store</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span class="ptag mobile">Mobile</span><span class="ptag">Shooting</span><span
+                class="ptag">3D</span></div>
+            <h3>Bottle Shoot – Bottle Shooting</h3>
+            <p>Casual aim-trainer shooting game where players use a sniper rifle scope to aim and shatter bottles with
+              increasing difficulty.</p>
+            <div class="project-features">
+              <span><i class="fas fa-check"></i> Sniper Scope Aiming</span>
+              <span><i class="fas fa-check"></i> Progressive Difficulty</span>
+              <span><i class="fas fa-check"></i> Moving Bottles</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card fade-up" data-category="board">
+          <div class="project-thumbnail">
+            <img src="https://play-lh.googleusercontent.com/Osj0tp9tME5PxTdoeSK-cpIqXloGHRGjrIrW0Nkg8eXAo_R5QPdIFB70NiZ_tIpXKA=w480-h960" alt="Carrom Strike" class="project-img-cover" />
+            <div class="project-overlay">
+              <a href="https://play.google.com/store/apps/details?id=com.carromboard.onlineboardgame" target="_blank"
+                class="project-link"><i class="fab fa-google-play"></i> Play Store</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span class="ptag mobile">Mobile</span><span class="ptag">Board</span><span
+                class="ptag">Multiplayer</span></div>
+            <h3>Carrom Strike – Disc Pool Game</h3>
+            <p>3D digital carrom board game recreating the classic South Asian board game with offline and online
+              multiplayer modes.</p>
+            <div class="project-features">
+              <span><i class="fas fa-check"></i> Online Multiplayer</span>
+              <span><i class="fas fa-check"></i> 3D Graphics</span>
+              <span><i class="fas fa-check"></i> Multiple Difficulty Levels</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card fade-up" data-category="word">
+          <div class="project-thumbnail">
+            <img src="https://play-lh.googleusercontent.com/e1bYBQhXEIK9U-tWvM3NgAhScnK1gow7z7szE4ev_Eb8TK_3bKmyhWDKqo_HwfP8xpQ42Y3iK6vrnEiSYy1BYw=w480-h960" alt="Word Scramble" class="project-img-cover" />
+            <div class="project-overlay">
+              <a href="https://play.google.com/store/apps/details?id=com.wordgames.scrambledwords" target="_blank"
+                class="project-link"><i class="fab fa-google-play"></i> Play Store</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span class="ptag mobile">Mobile</span><span class="ptag">Word</span><span
+                class="ptag">Timed</span></div>
+            <h3>Word Scramble Game</h3>
+            <p>Addictive word puzzle where players unscramble jumbled letters into words or arrange jumbled words into
+              sentences within a time limit.</p>
+            <div class="project-features">
+              <span><i class="fas fa-check"></i> Words &amp; Sentence Modes</span>
+              <span><i class="fas fa-check"></i> Timed Gameplay</span>
+              <span><i class="fas fa-check"></i> Hint System</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card fade-up" data-category="shooting">
+          <div class="project-thumbnail">
+            <img src="https://play-lh.googleusercontent.com/eLax4Rrb7OsEAsAgGv2N8wh3WfSqyUyYGhu-viZHrfNOP3-T-xS3xu9vzANokKMMVEM=w480-h960" alt="Watermelon Shooting" class="project-img-cover" />
+            <div class="project-overlay">
+              <a href="https://play.google.com/store/apps/details?id=com.shootinggames.watermelonshooter"
+                target="_blank" class="project-link"><i class="fab fa-google-play"></i> Play Store</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span class="ptag mobile">Mobile</span><span class="ptag">Archery</span><span
+                class="ptag">3D</span></div>
+            <h3>Watermelon Shooting: Archery</h3>
+            <p>Bow-and-arrow archery game where players shoot watermelons across 30 challenging levels, each with a
+              target within a time limit.</p>
+            <div class="project-features">
+              <span><i class="fas fa-check"></i> 30 Levels</span>
+              <span><i class="fas fa-check"></i> Bow &amp; Arrow Mechanics</span>
+              <span><i class="fas fa-check"></i> 3D Graphics</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card fade-up" data-category="casual">
+          <div class="project-thumbnail">
+            <img src="https://play-lh.googleusercontent.com/dyId4iB4l6WLRJ3REaxdj3gKBjKuzC57BbAVPzrEPtErSTa1qfOpsjWVlssq8Bjdt-4=w480-h960" alt="Parachute Jump" class="project-img-cover" />
+            <div class="project-overlay">
+              <a href="https://play.google.com/store/apps/details?id=com.funnygames.parachutejump" target="_blank"
+                class="project-link"><i class="fab fa-google-play"></i> Play Store</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span class="ptag mobile">Mobile</span><span class="ptag">Casual</span><span
+                class="ptag">Adventure</span></div>
+            <h3>Parachute Jump</h3>
+            <p>Exciting one-tap casual game where players leap from a parachute and land on a water tube while dodging
+              helicopters, rocks, and airplanes.</p>
+            <div class="project-features">
+              <span><i class="fas fa-check"></i> One-Tap Controls</span>
+              <span><i class="fas fa-check"></i> Obstacle Dodging</span>
+              <span><i class="fas fa-check"></i> Bonus Life System</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- AI SECTION -->
+      <div class="section-header fade-up" style="margin-top:4rem;">
+        <h2>AI Application</h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card fade-up" data-category="ai">
+          <div class="project-thumbnail">
+            <div class="project-placeholder" style="background:linear-gradient(135deg,#1a0a2e,#2e1060)">
+              <i class="fas fa-brain" style="color:#c084fc"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link"><i class="fab fa-google-play"></i> Play Store</a>
+              <a href="#" class="project-link"><i class="fab fa-apple"></i> App Store</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="ptag" style="background:rgba(192,132,252,0.15);color:#c084fc">AI</span>
+              <span class="ptag mobile">Mobile</span>
+              <span class="ptag">Android &amp; iOS</span>
+            </div>
+            <h3>Study Buddy</h3>
+            <p>AI-powered study assistant that helps students prepare for exams, specially designed for NCERT students with smart question practice and personalized learning.</p>
+            <div class="project-features">
+              <span><i class="fas fa-check"></i> AI-Powered Learning</span>
+              <span><i class="fas fa-check"></i> NCERT Focused</span>
+              <span><i class="fas fa-check"></i> Exam Preparation</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header fade-up">
+        <h2>Let's Work Together</h2>
+      </div>
+      <div class="contact-content fade-up">
+        <div class="contact-info">
+          <p class="contact-desc">Open to freelance work, full-time roles, and game jam teams.</p>
+          <div class="contact-items">
+            <div class="contact-item"><i class="fas fa-envelope"></i><span>kanchan10kumari.kk@gmail.com</span></div>
+            <div class="contact-item"><i class="fas fa-map-marker-alt"></i><span>India</span></div>
+            <div class="contact-item"><i class="fas fa-circle status-online"></i><span>Available for work</span></div>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-btn github"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/kanchan-kumari-9a4548170" target="_blank" class="social-btn linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group"><input type="text" placeholder="Your Name" required /></div>
+          <div class="form-group"><input type="email" placeholder="Your Email" required /></div>
+          <div class="form-group"><input type="text" placeholder="Subject" required /></div>
+          <div class="form-group"><textarea rows="5" placeholder="Your Message" required></textarea></div>
+          <button type="submit" class="btn btn-primary full-width">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
