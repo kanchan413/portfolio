@@ -271,7 +271,6 @@ body {
 .project-tags { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-bottom: 0.8rem; }
 .ptag { font-size: 0.7rem; padding: 0.2rem 0.6rem; border-radius: 3px; font-family: var(--font-head); letter-spacing: 0.5px; background: var(--border); color: var(--text-dim); }
 .ptag.unity   { background: rgba(0,255,136,0.15); color: var(--accent); }
-.ptag.unreal  { background: rgba(255,107,53,0.15); color: var(--accent2); }
 .ptag.mobile  { background: rgba(0,212,255,0.15);  color: var(--cyan); }
 .ptag.vr      { background: rgba(124,58,237,0.15); color: #c084fc; }
 
